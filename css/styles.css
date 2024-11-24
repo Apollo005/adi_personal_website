@@ -1,4 +1,4 @@
-/* General Variables */
+/* General Variables to base light mode */
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
@@ -9,7 +9,7 @@
     --cta-txt-color: #ffffff;
 }
 
-/* General Styles */
+/* General Styles for body of the pages */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -21,30 +21,35 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Header h1 and h2 general styles */
 h1, h2{
     text-align: center;
     margin: 1.5rem 0;
     color: var(--text-color);
 }
 
+/* General Styles for paragraph content */
 p {
     color: var(--text-color);
 }
 
+/* General Styles fro highlighting text on button etc. */
 .highlight {
     color: var(--accent-color);
 }
 
+/* General Styles for link */
 a {
     color: var(--accent-color);
     text-decoration: none;
 }
 
+/* General Styles for link hover*/
 a:hover {
     text-decoration: underline;
 }
 
-/* Navigation */
+/* Navigation styles based on dark or light mode */
 nav {
     background-color: var(--header-bg);
     padding: 1rem 2rem;
@@ -54,6 +59,7 @@ nav {
     z-index: 10;
 }
 
+/* Navigation styles based on dark or light mode */
 nav ul {
     list-style: none;
     display: flex;
@@ -63,10 +69,12 @@ nav ul {
     padding: 0;
 }
 
+/* Navigation styles to bold specifc bullets of nav bar */
 nav li {
     font-weight: bold;
 }
 
+/* Navigation styles to bold specifc bullets of nav bar when active */
 nav a.active {
     border-bottom: 2px solid var(--accent-color);
 }
@@ -81,6 +89,7 @@ nav a.active {
     animation: fadeIn 1s ease-in;
 }
 
+/* styles for cta class on home page*/
 .cta {
     display: inline-block;
     margin-top: 1.5rem;
@@ -93,11 +102,12 @@ nav a.active {
     transition: transform 0.3s;
 }
 
+/* styles for cta class on home page when hovering button*/
 .cta:hover {
     transform: scale(1.1);
 }
 
-/* About Section */
+/* About Section styles*/
 #about {
     padding: 1rem 2rem;
     display: flex;
@@ -106,13 +116,14 @@ nav a.active {
     text-align: center;
 }
 
+/* About Section profile pic styles for circular oval shape*/
 .profile-pic {
     border-radius: 50%;
     width: 150px;
     margin-bottom: 1rem;
 }
 
-/* Footer */
+/* Footer styles*/
 footer {
     background-color: var(--footer-bg);
     text-align: center;
@@ -121,7 +132,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Canvas Background */
+/* Canvas Background with star animations layered behind footer and header*/
 canvas#background {
     position: fixed;
     top: 0;
@@ -132,7 +143,7 @@ canvas#background {
     pointer-events: none;
 }
 
-/* Animations */
+/* Animations between pages*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -142,7 +153,7 @@ canvas#background {
     }
 }
 
-/* Page Transition */
+/* Page Transition for specific elements */
 body {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -160,6 +171,7 @@ body.loaded {
     padding: 2rem 0;
 }
 
+/* Projects Page Enhancements with the card layout */
 .project-card {
     background-color: var(--bg-color);
     border-radius: 8px;
@@ -168,24 +180,29 @@ body.loaded {
     transition: transform 0.3s ease;
 }
 
+/* Projects Page Enhancements for hover mode on cover to pop up */
 .project-card:hover {
     transform: translateY(-5px);
 }
 
+/* Projects Page Enhancements */
 .project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
+/* Projects Page Enhancements sizing adjustment*/
 .project-card-content {
     padding: 1rem;
 }
 
+/* Projects Page Enhancements with text spacing */
 .project-card h2 {
     margin-top: 0;
 }
 
+/* Projects Page Enhancements link to githup repos */
 .project-link {
     display: inline-block;
     margin-top: 1rem;
@@ -197,10 +214,12 @@ body.loaded {
     transition: background-color 0.3s ease;
 }
 
+/* Projects Page Enhancements hover for link to github */
 .project-link:hover {
     background-color: #0055cc;
 }
 
+/* Experience Page Enhancements with text styles*/
 #experience h2 {
     text-align: unset;
 }
@@ -213,6 +232,7 @@ body.loaded {
     padding: 2rem 0;
 }
 
+/* Time line on experience Page Enhancements */
 .timeline::before {
     content: '';
     position: absolute;
@@ -348,12 +368,13 @@ nav li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Skills Section */
+/* Skills Section under the projects section */
 #skills {
     padding: 2rem;
     text-align: center;
 }
 
+/* Skills Section under the projects section to provide a grid layout*/
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -364,6 +385,7 @@ nav li {
     max-width: 900px;
 }
 
+/* Skills Section under the projects section to provide spacing */
 .skill {
     display: flex;
     flex-direction: column;
@@ -376,6 +398,7 @@ nav li {
     transform: scale(1.1);
 }
 
+/* Skills Section under the projects section for the icons*/
 .skill img {
     width: 80px;
     height: auto;
@@ -383,12 +406,14 @@ nav li {
     border-radius: 8px;
 }
 
+/* Skills Section under the projects section to provide text under icons */
 .skill p {
     font-size: 1rem;
     color: var(--text-color);
     margin: 0;
 }
 
+/* Accesbility settings for the website for dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #1e1e1e;
@@ -404,6 +429,7 @@ nav li {
 
 }
 
+/* Accesbility settings for the website for high contrast users */
 @media (prefers-contrast: more) {
     :root {
         --bg-color: #000000;
@@ -415,7 +441,7 @@ nav li {
     }
 }
 
-/* Dark Mode Variables */
+/* Dark Mode Variables for manual dark mode toggle*/
 .dark-mode {
     --bg-color: #1e1e1e;
     --text-color: #ffffff;
@@ -424,8 +450,9 @@ nav li {
     --footer-bg: #2b2b2b;
     --cta-txt-color: #000000;
 }
-
 /* Accessibility preferences */
+/* Accesbility settings for the website for prefers reduce motion to 
+get rid of animations and fade transitions */
 @media (prefers-reduced-motion: reduce) {
     canvas {
         display: none;
