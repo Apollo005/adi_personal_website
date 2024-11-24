@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Developer Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <canvas id="background"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a class = nbar href="index.html">Home</a></li>
+            <li><a class = nbar href="projects.html">Projects</a></li>
+            <li><a class = nbar href="experience.html">Experience</a></li>
+            <li><a class = nbar href="contact.html">Contact</a></li>
+            <li><button id="dark-mode-toggle" class="toggle-btn">Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Aditya Tambe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
