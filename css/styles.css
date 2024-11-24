@@ -21,7 +21,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2 {
+h1, h2{
     text-align: center;
     margin: 1.5rem 0;
     color: var(--text-color);
@@ -182,7 +182,7 @@ body.loaded {
     padding: 1rem;
 }
 
-.project-card h3 {
+.project-card h2 {
     margin-top: 0;
 }
 
@@ -199,6 +199,10 @@ body.loaded {
 
 .project-link:hover {
     background-color: #0055cc;
+}
+
+#experience h2 {
+    text-align: unset;
 }
 
 /* Experience Page Enhancements */
